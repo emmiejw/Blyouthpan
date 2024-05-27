@@ -1,7 +1,7 @@
 @php
 use App\Models\Manager;
 @endphp
-<section class="bg-white border-b py-8">
+<section class="bg-white py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center gradient-text">
             Our Management Team

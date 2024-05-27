@@ -7,7 +7,7 @@
         color: transparent;
     }
 </style>
-<section class="bg-white border-b py-8">
+<section class="bg-white py-8">
     <div class="container max-w-5xl mx-auto m-8">
         <h2 class="w-full p-4 my-2 text-5xl sm:text-2xl font-bold leading-tight text-center gradient-text">
             {{ $content->title ?? null }}
