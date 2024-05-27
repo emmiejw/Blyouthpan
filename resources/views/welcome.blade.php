@@ -505,10 +505,10 @@ $content = Content::all()->first();
                 <div class="flex-1">
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="https://emilywallace-price.co.uk" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Created by Emily Wallace - Price</a>
+                            <a href="https://emilywallace-price.co.uk" class="no-underline hover:underline text-gray-100 hover:text-pink-500">Created by Emily Wallace - Price</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="https://www.facebook.com/groups/3517405868502007" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Comet 86 Facebook</a>
+                            <a href="https://www.facebook.com/groups/3517405868502007" class="no-underline hover:underline text-gray-100 hover:text-pink-500">Comet 86 Facebook</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                            Comet 86 Website Coming Soon . . . .

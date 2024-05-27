@@ -25,7 +25,7 @@
         <nav class="flex items-center justify-between flex-wrap bg-pink-600 p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    Blackfield and Langley Youth FC
+                    Blackfield & Langley Youth & Pan FC
                 </a>
             </div>
             @if(Auth::user())
@@ -35,16 +35,7 @@
                             <a class="text-white hover:text-white" href="/content">Website Content</a>
                         </li>
                         <li class="mr-6">
-                            <a class="text-white hover:text-white" href="/fixtures">Fixtures</a>
-                        </li>
-                        <li class="mr-6">
-                            <a class="text-white hover:text-white" href="/games">Games</a>
-                        </li>
-                        <li class="mr-6">
                             <a class="text-white hover:text-white" href="/managers">Managers & Coaches</a>
-                        </li>
-                        <li class="mr-6">
-                            <a class="text-white hover:text-white" href="/photo-gallery">Photo Gallery</a>
                         </li>
                     </ul>
                 </div>

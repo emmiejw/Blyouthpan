@@ -82,16 +82,16 @@ class ContentController extends Controller
      * @param  Request  $request
      * @param  Content  $content
      */
-    public function update(Request $request, Content $content): RedirectResponse
+    public function update(Request $request, Content $content)
     {
         if ($request->hasFile('image_one')) {
-            $imageOneName = $request->getSchemeAndHttpHost() . '/assets/images/' . time() . '.' . $request->image_one->extension();
-            $request->image_one->move(public_path('/assets/images/'), $imageOneName);
-
+            $imageOneName = time() . '.' . $request->image_one->extension();
+            $request->image_one->move(public_path('assets/images'), $imageOneName);
+            $content->image_one = $imageOneName;
         } elseif ($request->hasFile('image_two')) {
-            $imageTwoName = $request->getSchemeAndHttpHost() . '/assets/images/' . time() . '.' . $request->image_two->extension();
-            $request->image_two->move(public_path('/assets/images/'), $imageTwoName);
-
+            $imageNameTwo = time() . '.' . $request->photo->extension();
+            $request->image_two->move(public_path('assets/images'), $imageNameTwo);
+            $content->image_two = $imageNameTwo;
         } else {
             return 'error';
         }
@@ -100,9 +100,7 @@ class ContentController extends Controller
         $content->sub_title = $request->sub_title;
         $content->section_one = $request->section_one;
         $content->section_two = $request->section_two;
-        $content->image_one = $imageOneName;
         $content->image_one_source = $request->image_one_source;
-        $content->image_two = $imageTwoName;
         $content->image_two_source = $request->image_two_source;
 
         return redirect()->route('content.index')->with('status', 'Content has been updated!');

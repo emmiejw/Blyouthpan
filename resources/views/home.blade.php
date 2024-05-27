@@ -21,16 +21,6 @@
                                 <h2 class="text-2xl font-semibold leading-tight">Managers & Coaches</h2>
                             </div>
                             @break
-                        @case('fixtures')
-                            <div class="card-header">
-                                <h2 class="text-2xl font-semibold leading-tight">Fixtures</h2>
-                            </div>
-                            @break
-                        @case('games')
-                            <div class="card-header">
-                                <h2 class="text-2xl font-semibold leading-tight">Games</h2>
-                            </div>
-                            @break
                         @default
                             Dashboard
                     @endswitch
@@ -47,15 +37,6 @@
                             @case('managers')
                                 @include('managers.index')
                                 @break
-                                @case('fixtures')
-                                    @include('fixtures.index')
-                                    @break
-                                @case('games')
-                                    @include('games.index')
-                                    @break
-                                @case('photo-gallery')
-                                    @include('photo-gallery.index')
-                                    @break
                                 @case('content')
                                     @include('content.index')
                                     @break

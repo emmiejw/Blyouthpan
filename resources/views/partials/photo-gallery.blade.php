@@ -57,7 +57,7 @@
     }
 </style>
 
-<section>
+<section class="p-10">
     <div class="carousel relative rounded overflow-hidden shadow-xl">
         <div class="carousel-inner relative overflow-hidden w-full">
 
