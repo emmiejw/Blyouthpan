@@ -8,7 +8,6 @@
     .carousel-inner {
         border: 1px solid white;
         border-radius: 15px;
-        padding: 5px;
     }
 
     .carousel-open:checked + .carousel-item {
@@ -64,9 +63,9 @@
 </style>
 
 <section class="p-10">
-    <p class="sm:text-2xl lg:text-4xl text-center mb-4">What our Families think</p>
+    <p class="text-4xl text-center mb-4">What our Families think</p>
     <div class="carousel relative rounded overflow-hidden shadow-xl">
-        <div class="carousel-inner relative overflow-hidden w-full border-white ">
+        <div class="carousel-inner relative overflow-hidden w-full border-white">
 
             <!-- Slide 1 -->
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
