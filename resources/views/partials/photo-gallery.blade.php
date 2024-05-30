@@ -5,6 +5,11 @@
         transition: opacity 0.6s ease-out;
         width: 100%;
     }
+    .carousel-inner {
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 5px;
+    }
 
     .carousel-open:checked + .carousel-item {
         position: relative;
@@ -46,6 +51,7 @@
 
     .carousel-bullet:hover {
         color: darkgoldenrod;
+        font-weight: bold;
     }
 
     .carousel-open:checked ~ .carousel-control-prev {
@@ -58,8 +64,9 @@
 </style>
 
 <section class="p-10">
+    <p class="sm:text-2xl lg:text-4xl text-center mb-4">What our Families think</p>
     <div class="carousel relative rounded overflow-hidden shadow-xl">
-        <div class="carousel-inner relative overflow-hidden w-full">
+        <div class="carousel-inner relative overflow-hidden w-full border-white ">
 
             <!-- Slide 1 -->
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">

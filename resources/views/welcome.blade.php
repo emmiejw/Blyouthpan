@@ -35,10 +35,10 @@
             line-height: 1.5
         }
 
-        *, :after, :before {
-            box-sizing: border-box;
-            border: 0 solid #e2e8f0
-        }
+            *, :after, :before {
+                box-sizing: border-box;
+                border: 0 solid #e2e8f0
+            }
 
         a {
             color: inherit;
@@ -419,7 +419,7 @@ $content = Content::all()->first();
 @include('layouts.navbar')
 <!--Hero-->
 <div class="pt-24">
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center" >
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p class="leading-normal text-2xl mb-8">
@@ -435,7 +435,7 @@ $content = Content::all()->first();
 <div class="relative -mt-12 lg:-mt-24">
     <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g stroke="none" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd">
             <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
                 <path
                     d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"

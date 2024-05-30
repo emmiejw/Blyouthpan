@@ -5,7 +5,6 @@
         @php
             $content = \App\Models\Content::all();
         @endphp
-       @if(!$content)
             <div class="mb-4">
                 <a href="{{ route('content.create') }}">
                     <button href="{{ route('content.create') }}"
@@ -14,7 +13,6 @@
                     </button>
                 </a>
             </div>
-       @endif
         <div class="px-4 sm:px-8 py-4 overflow-x-auto col-md-12">
             <div
                 class="inline-block min-w-full shadow-md rounded-lg overflow-hidden"
