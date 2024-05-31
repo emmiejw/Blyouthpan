@@ -441,7 +441,7 @@
 use \App\Models\Content as Content;
 $content = Content::all()->first();
 @endphp
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+<body class="leading-normal tracking-normal text-white gradient">
 @include('layouts.navbar')
 <!--Hero-->
 <div class="pt-24">

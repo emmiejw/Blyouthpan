@@ -5,16 +5,16 @@
         <div class="grid gap-8 m-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
             <div class="w-full max-w-xs text-center">
-                <img class="object-cover object-center w-full mx-auto rounded-lg" src="/images/blueandpink.JPG" alt="avatar" />
+                <img class="object-cover object-center w-full mx-auto rounded-lg border-gold" src="/images/blueandpink.JPG" alt="avatar" />
             </div>
 
             <div class="w-full max-w-xs text-center">
-                <img class="object-covern object-center w-full mx-auto rounded-lg" src="/images/goalie.JPG" alt="avatar" />
+                <img class="object-covern object-center w-full mx-auto rounded-lg border-gold" src="/images/goalie.JPG" alt="avatar" />
 
             </div>
 
             <div class="w-full max-w-xs text-center">
-                <img class="object-cover object-center w-full mx-auto rounded-lg" src="/images/pan-kit.jpg" alt="avatar" />
+                <img class="object-cover object-center w-full mx-auto rounded-lg border-gold" src="/images/pan-kit.jpg" alt="avatar" />
             </div>
         </div>
     </div>
