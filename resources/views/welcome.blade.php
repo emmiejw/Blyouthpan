@@ -9,17 +9,51 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sevillana&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
     <style>
-        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+        .gradient {
+            background: linear-gradient(92deg, #f233b8 0%, #2814d8 100%);
+        }
+        .gradient-text {
+            font-size: 40px;
+            font-weight: bold;
+            background: linear-gradient(92deg, #f233b8 0%, #2814d8 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .edu-vic-wa-nt-beginner {
+            font-family: "Edu VIC WA NT Beginner", cursive;
+            font-size: 21px;
+            font-style: normal;
+        }
+
+        .caveat {
+            font-family: "Caveat", cursive;
+            font-size: 27px;
+            font-style: normal;
+        }
+
+        .sevillana-regular {
+            font-family: "Sevillana", cursive;
+            font-weight: 400;
+            font-size: 25px;
+        }
         html {
             line-height: 1.15;
             -webkit-text-size-adjust: 100%
         }
 
         body {
-            margin: 0
+            margin: 0;
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            line-height: 1.5
         }
 
         a {
@@ -31,7 +65,8 @@
         }
 
         html {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
             line-height: 1.5
         }
 
@@ -287,6 +322,14 @@
             grid-template-columns:repeat(1, minmax(0, 1fr))
         }
 
+        .gold-font {
+            color: #d1a33a;
+        }
+
+        .border-gold {
+            border: 2px solid #d1a33a;
+        }
+
         @media (min-width: 640px) {
             .sm\:rounded-lg {
                 border-radius: .5rem
@@ -393,23 +436,6 @@
             }
         }
     </style>
-
-    <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .gradient {
-            background: linear-gradient(92deg, #f233b8 0%, #2814d8 100%);
-        }
-        .gradient-text {
-            font-size: 40px;
-            font-weight: bold;
-            background: linear-gradient(92deg, #f233b8 0%, #2814d8 100%);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-    </style>
 </head>
 @php
 use \App\Models\Content as Content;
@@ -510,7 +536,7 @@ $content = Content::all()->first();
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://www.facebook.com/groups/3517405868502007" class="no-underline hover:underline text-gray-100 hover:text-pink-500">Comet 86 Facebook</a>
                         </li>
-                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0 gold-font">
                            Comet 86 Website Coming Soon . . . .
                         </li>
                     </ul>

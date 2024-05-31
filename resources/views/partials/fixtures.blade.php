@@ -16,7 +16,7 @@
             <h3 class="text-center text-3xl mt-6 gradient-text">Fixtures & games</h3>
         </div>
         <br>
-        <div class='w-2/3 px-10 py-8 mx-auto bg-white rounded-lg shadow-xl text-purple-700 text-2xl text-center'>
+        <div class='w-2/3 px-10 py-8 mx-auto bg-white rounded-lg shadow-xl text-purple-700 text-2xl text-center border-gold'>
             This section will be updated when the new season starts . . . .
         </div>
     </div>
