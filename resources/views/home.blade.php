@@ -37,9 +37,9 @@
                             @case('managers')
                                 @include('managers.index')
                                 @break
-                                @case('content')
-                                    @include('content.index')
-                                    @break
+                            @case('content')
+                                @include('content.index')
+                                @break
                             @default
                         @endswitch
                     </div>

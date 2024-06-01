@@ -1,7 +1,5 @@
 <div class="container mx-auto px-4 sm:px-8">
     <div class="py-8">
-        <div>
-        </div>
         @php
             $content = \App\Models\Content::all();
         @endphp
@@ -13,10 +11,8 @@
                     </button>
                 </a>
             </div>
-        <div class="px-4 sm:px-8 py-4 overflow-x-auto col-md-12">
-            <div
-                class="inline-block min-w-full shadow-md rounded-lg overflow-hidden"
-            >
+        <div class="px-4 sm:px-8 py-4 overflow-x-auto col-md-12" style="margin-left: -2rem">
+            <div class="inline-block min-w-full shadow-md rounded-lg overflow-hidden">
                 <table class="min-w-full leading-normal">
                     <thead>
                     <tr>

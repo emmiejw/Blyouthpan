@@ -51,7 +51,7 @@
 
         body {
             margin: 0;
-            font-family: "Roboto Mono", monospace;
+            font-family: "Source sans pro";
             font-optical-sizing: auto;
             line-height: 1.5
         }
@@ -64,16 +64,10 @@
             display: none
         }
 
-        html {
-            font-family: "Roboto Mono", monospace;
-            font-optical-sizing: auto;
-            line-height: 1.5
+        *, :after, :before {
+            box-sizing: border-box;
+            border: 0 solid #e2e8f0
         }
-
-            *, :after, :before {
-                box-sizing: border-box;
-                border: 0 solid #e2e8f0
-            }
 
         a {
             color: inherit;
@@ -331,6 +325,9 @@
         }
 
         @media (min-width: 640px) {
+            table {
+                margin: -2rem;
+            }
             .sm\:rounded-lg {
                 border-radius: .5rem
             }
