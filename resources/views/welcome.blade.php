@@ -455,7 +455,7 @@ $content = Content::all()->first();
         </div>
     </div>
 </div>
-<div class="relative -mt-12 lg:-mt-24">
+<div class="relative -mt-12 lg:-mt-24" style="border-bottom: white;">
     <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd">

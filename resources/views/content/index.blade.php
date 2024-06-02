@@ -1,16 +1,8 @@
+@php
+    use \App\Models\Content;
+@endphp
 <div class="container mx-auto px-4 sm:px-8">
     <div class="py-8">
-        @php
-            $content = \App\Models\Content::all();
-        @endphp
-            <div class="mb-4">
-                <a href="{{ route('content.create') }}">
-                    <button href="{{ route('content.create') }}"
-                            class=" float-end bg-purple-700 hover:bg-purple-700 text-white font-bold py-2 px-4 border-b-4 border-pink-600 hover:border-pink-600 rounded">
-                        Add Content
-                    </button>
-                </a>
-            </div>
         <div class="px-4 sm:px-8 py-4 overflow-x-auto col-md-12" style="margin-left: -2rem">
             <div class="inline-block min-w-full shadow-md rounded-lg overflow-hidden">
                 <table class="min-w-full leading-normal">
@@ -54,7 +46,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach(\App\Models\Content::all() as $content)
+                    @foreach(Content::all() as $content)
                         <tr>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 {{ $content->title }}
@@ -78,12 +70,6 @@
                                 <a href="{{ route('content.edit', $content->id) }}" class="text-red-600">
                                    Edit
                                 </a>
-
-                                <form action="{{ route('content.destroy', $content->id)}}" method="post">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="btn btn-danger" type="submit">Delete</button>
-                                </form>
                             </td>
                         </tr>
                     @endforeach

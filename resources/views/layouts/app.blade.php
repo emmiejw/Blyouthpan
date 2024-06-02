@@ -28,18 +28,6 @@
                     Blackfield & Langley Youth & Pan FC
                 </a>
             </div>
-            @if(Auth::user())
-                <div class="block">
-                    <ul class="flex">
-                        <li class="mr-6">
-                            <a class="text-white hover:text-white" href="/content">Website Content</a>
-                        </li>
-                        <li class="mr-6">
-                            <a class="text-white hover:text-white" href="/managers">Managers & Coaches</a>
-                        </li>
-                    </ul>
-                </div>
-            @endif
             <div class="block">
                 <ul class="navbar-nav ms-auto">
                     <!-- Authentication Links -->

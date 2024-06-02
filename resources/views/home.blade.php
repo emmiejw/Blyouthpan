@@ -10,20 +10,6 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    @switch(Request::path())
-                        @case('content')
-                            <div class="card-header">
-                                <h2 class="text-2xl font-semibold leading-tight">Website Content</h2>
-                            </div>
-                            @break
-                        @case('managers')
-                            <div class="card-header">
-                                <h2 class="text-2xl font-semibold leading-tight">Managers & Coaches</h2>
-                            </div>
-                            @break
-                        @default
-                            Dashboard
-                    @endswitch
                     <div class="card-body">
                         @if (session('status'))
                             <div class="bg-purple-100 border border-purple-700 text-pink-700 px-4 py-3 rounded relative" role="alert">
@@ -33,11 +19,48 @@
                               </span>
                             </div>
                         @endif
-                        @switch(Request::path())
+                        @php
+                            $currentPath = Request::path();
+                        @endphp
+                        @if(Auth::user())
+                            <div class="block">
+                                <ul class="flex">
+                                    @if($currentPath === 'home')
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/content') }}">Website Content</a>
+                                            </button>
+                                        </li>
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/managers') }}">Managers & Coaches</a>
+                                            </button>
+                                        </li>
+                                    @endif
+                                    @if($currentPath === 'managers')
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/content') }}">Website Content</a>
+                                            </button>
+                                        </li>
+                                    @endif
+                                    @if($currentPath === 'content')
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/managers') }}">Managers & Coaches</a>
+                                            </button>
+                                        </li>
+                                    @endif
+                                </ul>
+                            </div>
+                        @endif
+                        @switch($currentPath)
                             @case('managers')
+                                <h1 class="mt-4 text-center font-bold text-2xl">Managers</h1>
                                 @include('managers.index')
                                 @break
                             @case('content')
+                                <h1 class="mt-4 text-center font-bold text-2xl">Content</h1>
                                 @include('content.index')
                                 @break
                             @default
