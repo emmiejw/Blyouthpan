@@ -1,4 +1,4 @@
-<section class="bg-gradient-to-br">
+<section class="bg-gradient-to-br gradient">
     <div class="container px-6 py-8 mx-auto">
         <h2 class="text-2xl font-semibold text-center tracking-wide capitalize text-3xl gold-font">Our Kit</h2>
 

@@ -62,7 +62,7 @@
     }
 </style>
 
-<section class="py-8 px-2 lg:px-20">
+<section class="py-8 px-2 lg:px-20 gradient">
     <p class="text-4xl text-center mb-4 font-bold gold-font">What our Families think</p>
     <div class="carousel relative rounded overflow-hidden shadow-xl">
         <div class="carousel-inner relative overflow-hidden w-full">

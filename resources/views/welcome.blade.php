@@ -441,7 +441,7 @@ $content = Content::all()->first();
 <body class="leading-normal tracking-normal text-white">
 @include('layouts.navbar')
 <!--Hero-->
-<div class="pt-24">
+<div class="pt-24 gradient">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center" >
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -451,11 +451,11 @@ $content = Content::all()->first();
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
-            <img class="w-40 z-50 mx-auto mb-12" src="/images/b&ly.png"/>
+            <img class="w-40 z-50 mx-auto mb-12 lg:mb-20" src="/images/b&ly.png"/>
         </div>
     </div>
 </div>
-<div class="relative -mt-12 lg:-mt-24" style="border-bottom: white;">
+<div class="relative -mt-12 lg:-mt-24 gradient" style="border-bottom: white;">
     <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd">
@@ -491,11 +491,11 @@ $content = Content::all()->first();
 @include('partials.managers')
 
 <!-- Change the colour #f8fafc to match the previous section colour -->
-<svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+<svg class="wave-top gradient" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-            <g class="wave" fill="#ffffff">
+            <g class="wave gradient" fill="#ffffff">
                 <path
                     d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
                 ></path>
@@ -517,10 +517,10 @@ $content = Content::all()->first();
         </g>
     </g>
 </svg>
-<section class="container mx-auto text-center">
-    <footer>
-        <div class="container mx-auto px-8">
-            <div class="w-full flex flex-col md:flex-row py-6">
+<section class="mx-auto text-center gradient">
+    <footer class="gradient w-full">
+        <div class="container gradient">
+            <div class="w-full flex flex-col md:flex-row py-6 gradient">
                 <div class="flex-1 mb-6 text-black">
                     <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
                     </a>
