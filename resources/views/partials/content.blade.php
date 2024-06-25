@@ -26,7 +26,7 @@
                 </p>
             </div>
             <div class="w-full sm:w-1/2 p-4">
-                <img src="{{ $content->image_one ?? null }}" class="rounded-lg border-gold">
+                <img src="/images/WhatsApp Image 2024-06-25 at 05.18.18.jpeg" class="rounded-lg border-gold">
             </div>
         </div>
         <div class="w-full mb-4">
@@ -34,7 +34,7 @@
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
             <div class="w-full sm:w-1/2 p-4 mt-4">
-                <img src="{{ $content->image_two ?? null }}" class="rounded-lg border-gold">
+                <img src="/images/b&ly.png" class="rounded-lg border-gold">
             </div>
             <div class="w-full sm:w-1/2 p-4 mt-4">
                 <div class="align-middle">
