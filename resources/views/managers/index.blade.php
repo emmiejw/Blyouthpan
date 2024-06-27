@@ -37,7 +37,7 @@
                         <tr>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 @if($manager->photo)
-                                    <img class="w-10 h-10 rounded-full" src="{{ $manager->photo }}">
+                                    <img class="w-10 h-10 rounded-full" src="/assets/images/{{ $manager->photo }}">
                                 @endif
                             </td>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">

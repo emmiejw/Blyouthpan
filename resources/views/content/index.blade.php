@@ -58,13 +58,13 @@
                                 {{ $content->section_one }}
                             </td>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                <img src=" {{ $content->image_one }} " alt="">
+                                <img src="/assets/images/{{ $content->image_one }}" alt="">
                             </td>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 {{ $content->section_two }}
                             </td>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                <img src=" {{ $content->image_two }} " alt="">
+                                <img src="/assets/images/{{ $content->image_two }}" alt="">
                             </td>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 <a href="{{ route('content.edit', $content->id) }}" class="text-red-600">

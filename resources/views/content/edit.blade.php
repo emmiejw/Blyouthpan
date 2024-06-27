@@ -57,10 +57,11 @@
                         </label>
                     </div>
                     <div class="md:w-2/3 px-1 py-0">
-                        <input type="file" name="image_one" id="photo" class="block md:w-2/3 border border-gray-100 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none
+                        <input type="file" name="image_one" id="image_one" class="block md:w-2/3 border border-gray-100 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none
                         file:bg-gray-50 file:border-0
                         file:me-4
-                        file:py-3 file:px-4
+                        file:py-3
+                        file:px-4
                        ">
                     </div>
                 </div>
@@ -71,10 +72,11 @@
                         </label>
                     </div>
                     <div class="w-1/3 px-1 py-0">
-                        <input type="file" name="image_one" id="image_two" class="block md:w-2/3 border border-gray-100 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none
+                        <input type="file" name="image_two" id="image_two" class="block md:w-2/3 border border-gray-100 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none
                         file:bg-gray-50 file:border-0
                         file:me-4
-                        file:py-3 file:px-4
+                        file:py-3
+                        file:px-4
                        ">
                     </div>
                 </div>

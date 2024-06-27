@@ -12,7 +12,7 @@ use App\Models\Manager;
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 xl:mt-16">
             @foreach(Manager::all() as $manager)
                 <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-blue-600 rounded-xl">
-                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="{{ $manager->photo ?? null }}">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="/assets/images/{{ $manager->photo ?? null }}">
 
                     <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize gold-font group-hover:text-white">{{ $manager->name ?? null }}</h1>
 

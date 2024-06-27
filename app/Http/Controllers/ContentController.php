@@ -89,7 +89,7 @@ class ContentController extends Controller
             $request->image_one->move(public_path('assets/images'), $imageOneName);
             $content->image_one = $imageOneName;
         } elseif ($request->hasFile('image_two')) {
-            $imageNameTwo = time() . '.' . $request->photo->extension();
+            $imageNameTwo = time() . '.' . $request->image_two->extension();
             $request->image_two->move(public_path('assets/images'), $imageNameTwo);
             $content->image_two = $imageNameTwo;
         } else {
@@ -102,6 +102,8 @@ class ContentController extends Controller
         $content->section_two = $request->section_two;
         $content->image_one_source = $request->image_one_source;
         $content->image_two_source = $request->image_two_source;
+
+        $content->save();
 
         return redirect()->route('content.index')->with('status', 'Content has been updated!');
     }
