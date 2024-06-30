@@ -36,8 +36,30 @@
                                                 <a class="text-blue-950" href="{{ url('/managers') }}">Managers & Coaches</a>
                                             </button>
                                         </li>
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/gallery') }}">Photo Gallery</a>
+                                            </button>
+                                        </li>
                                     @endif
                                     @if($currentPath === 'managers')
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/content') }}">Website Content</a>
+                                            </button>
+                                        </li>
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/gallery') }}">Photo Gallery</a>
+                                            </button>
+                                        </li>
+                                    @endif
+                                    @if($currentPath === 'gallery')
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/managers') }}">Managers & Coaches</a>
+                                            </button>
+                                        </li>
                                         <li class="mr-6">
                                             <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
                                                 <a class="text-blue-950" href="{{ url('/content') }}">Website Content</a>
@@ -48,6 +70,11 @@
                                         <li class="mr-6">
                                             <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
                                                 <a class="text-blue-950" href="{{ url('/managers') }}">Managers & Coaches</a>
+                                            </button>
+                                        </li>
+                                        <li class="mr-6">
+                                            <button class="shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                                <a class="text-blue-950" href="{{ url('/gallery') }}">Photo Gallery</a>
                                             </button>
                                         </li>
                                     @endif
@@ -62,6 +89,10 @@
                             @case('content')
                                 <h1 class="mt-4 text-center font-bold text-2xl">Content</h1>
                                 @include('content.index')
+                                @break
+                            @case('gallery')
+                                <h1 class="mt-4 text-center font-bold text-2xl">Photo Gallery</h1>
+                                @include('gallery.index')
                                 @break
                             @default
                         @endswitch

@@ -29,13 +29,6 @@ class ManagerController extends Controller
      */
     public function store(Request $request)
     {
-        if ($request->hasFile('photo')) {
-            $imageName = $request->getSchemeAndHttpHost() . '/assets/images/' . time() . '.' . $request->photo->extension();
-            $request->photo->move(public_path('/assets/images/'), $imageName);
-        } else {
-            return 'error';
-        }
-
 
         $manager = new Manager;
         $manager->name = $request->name;
@@ -43,7 +36,11 @@ class ManagerController extends Controller
         $manager->about_me = $request->about_me;
         $manager->email = $request->email;
         $manager->mobile = $request->mobile;
-        $manager->photo = $imageName;
+        if ($request->hasFile('photo')) {
+            $imageName = time() . '.' . $request->photo->extension();
+            $request->photo->move(public_path('assets/images'), $imageName);
+            $manager->photo = $imageName;
+        }
         $manager->save();
 
         return redirect('/managers')->with('status',   $manager->name . ' has been added as a ' . $manager->role);

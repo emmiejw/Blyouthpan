@@ -486,10 +486,13 @@ $content = Content::all()->first();
 
 @include('partials.fixtures')
 
-@include('partials.photo-gallery')
+@include('partials.testimonials')
 
 @include('partials.managers')
 
+@include('partials.photo-gallery')
+<br>
+<br>
 <!-- Change the colour #f8fafc to match the previous section colour -->
 <svg class="wave-top gradient" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">

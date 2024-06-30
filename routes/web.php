@@ -3,7 +3,7 @@
 use App\Http\Controllers\FixtureController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\ManagerController;
-use App\Http\Controllers\PhotoGalleryController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContentController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,5 +28,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('/managers', ManagerController::class);
 Route::resource('/fixtures', FixtureController::class);
 Route::resource('/games', GameController::class);
-Route::resource('/photo-gallery', PhotoGalleryController::class);
+Route::resource('/gallery', GalleryController::class);
 Route::resource('/content', ContentController::class);
